@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Components
+import Header from './components/Header'
+import Presentation from './components/Presentation';
+import Skills from './components/Skills';
+import Experiences from './components/Experiences';
+import Projects from './components/projects/Projects';
+import Contact from './components/Contact';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+// Icons
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+// import {  } from '@fortawesome/free-solid-svg-icons'
+
+// library.add()
+
+export default function App() {
+
+	return (
+		<>
+		<Header />
+		<Presentation />
+		<Skills />
+		<Experiences />
+		<Projects />
+		<Contact />
+		</>
   );
 }
 
-export default App;
