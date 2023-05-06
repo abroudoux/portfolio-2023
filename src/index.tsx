@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client';
 
 // Components
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 // Styles
 import './index.css';
@@ -19,5 +18,3 @@ root.render(
     	<App />
   	</React.StrictMode>
 );
-
-reportWebVitals();

@@ -1,29 +1,31 @@
 // Components
-import Header from './components/Header'
-import Presentation from './components/Presentation';
-import Skills from './components/Skills';
-import Experiences from './components/Experiences';
-import Projects from './components/projects/Projects';
-import Contact from './components/Contact';
+import Infos from './components/infos/Infos';
+import Header from './components/header/Header';
+import AboutMe from './components/aboutme/AboutMe';
+import Skills from './components/skills/Skills';
+import Experiences from './components/experiences/Experiences';
+// import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 
-// Icons
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-// import {  } from '@fortawesome/free-solid-svg-icons'
-
-// library.add()
 
 export default function App() {
 
 	return (
-		<>
-		<Header />
-		<Presentation />
-		<Skills />
-		<Experiences />
-		<Projects />
-		<Contact />
-		</>
-  );
+
+		<div>
+			
+			<Infos />
+			<Header />
+			{/* <AboutMe />
+			<Skills />
+			<Experiences /> */}
+			{/* <Projects /> */}
+			<Contact />
+
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  			<script>AOS.init();</script>
+
+		</div>
+	);
 }
 

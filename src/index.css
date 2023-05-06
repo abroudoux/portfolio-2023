@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+*, ::after, ::before {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101010;
+    color: #FCFCFC;
+    font-family: 'Lato', sans-serif;
+}
+
+// Classes
+
+.hovered {
+    transform: translateX(2px);
+}

@@ -1,6 +1,7 @@
 // Data
 import projectsDataProps from './interface';
 
+
 export default function Card(props: projectsDataProps) {
 
     return (
