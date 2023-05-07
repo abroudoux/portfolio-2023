@@ -13,8 +13,19 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h3, p {
+    display: inline-block;
+    vertical-align: top;
+  }
+
 // Classes
 
 .hovered {
     transform: translateX(2px);
+}
+
+.card-title {
+    background-color: #246DA8;
+    display: inline-block;
+    width: auto;
 }

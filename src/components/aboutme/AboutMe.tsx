@@ -2,10 +2,10 @@ export default function AboutMe() {
     
     return (
         
-        <section>
+        <section id="aboutme">
 
             <h1>
-                Hello! I'm Arthur Broudoux, junior developper
+                Bonjour ! Je m'appelle Arthur, développeur front junior
             </h1>
 
         </section>

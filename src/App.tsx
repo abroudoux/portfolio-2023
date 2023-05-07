@@ -1,10 +1,13 @@
+// React
+import { Routes, Route } from "react-router-dom";
+
 // Components
 import Infos from './components/infos/Infos';
 import Header from './components/header/Header';
 import AboutMe from './components/aboutme/AboutMe';
 import Skills from './components/skills/Skills';
-import Experiences from './components/experiences/Experiences';
-// import Projects from './components/projects/Projects';
+import Education from './components/education/Education';
+import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 
 
@@ -13,19 +16,17 @@ export default function App() {
 	return (
 
 		<div>
-			
 			<Infos />
 			<Header />
-			{/* <AboutMe />
-			<Skills />
-			<Experiences /> */}
-			{/* <Projects /> */}
-			<Contact />
 
-			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  			<script>AOS.init();</script>
+			<Routes>
+                <Route path="/" element={<AboutMe />}></Route>
+				<Route path="/projects" element={<Projects />}></Route>
+				<Route path="/skills" element={<Skills />}></Route>
+				<Route path="/formations" element={<Education />}></Route>
+				<Route path="/contact" element={<Contact />}></Route>
+            </Routes>
 
 		</div>
-	);
+	)
 }
-

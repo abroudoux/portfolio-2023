@@ -1,0 +1,44 @@
+// Keyframes Animations Disparition/Apparition
+
+@keyframes apparition_left {
+
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    } to {
+        oppacity: 1;
+    }
+
+}
+
+@keyframes apparition_right {
+
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    } to {
+        oppacity: 1;
+    }
+
+}
+
+@keyframes disparition_left {
+
+    from {
+        opacity: 1;
+        transform: translateX(-200px);
+    } to {
+        oppacity: 0;
+    }
+
+}
+
+@keyframes disparition_right {
+
+    from {
+        opacity: 1;
+        transform: translateX(200px);
+    } to {
+        oppacity: 0;
+    }
+}

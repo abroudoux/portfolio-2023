@@ -1,15 +1,29 @@
+// Data
+import contents from './content-contact';
+
+// Components
+import Links from './Links';
+
+
 export default function Contact() {
-    
+
     return (
 
-        <section>
+        <section id="contact" className="w-full h-auto p-12 pt-16">
 
-            <p className="text-sm italic text-red-600">
-                Links
-            </p>
-            <h2 className="text-3xl">
-                You can contact me ...
+            <h2 className="text-4xl pb-5 font-semibold">
+                Vous pouvez me contacter via...
             </h2>
+
+            {contents.map(contents => (
+                    <Links 
+                        id={contents.id}
+                        name={contents.name}
+                        link={contents.link}
+                        value={contents.value}
+                        target={contents.target}
+                    />
+                ))}
 
         </section>
     )

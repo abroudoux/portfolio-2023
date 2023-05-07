@@ -1,39 +1,48 @@
+// React
+import { NavLink } from "react-router-dom";
+
+
 export default function Header() {
+
+    let activeNav = 'bg-blue p-2 text-lg font-medium'
+    let inactiveNav = 'bg-transparent p-2 text-lg font-normal'
 
     return (
 
-        <header className="w-full h-auto flex flex-row mt-3">
+        <header className="w-full h-auto flex flex-row mt-5 px-10 justify-between align-middle">
 
-            <h1 className="w-6/12 text-2xl">
-                Arthur Broudoux
-            </h1>   
+            <NavLink to="/" className={({ isActive }) => isActive ? activeNav:inactiveNav}>
+                <h2 className="w-6/12 text-3xl font-semibold">
+                    abroudoux
+                </h2>
+            </NavLink> 
 
             <nav className="w-6/12"> 
-                <ul className="h-auto flex flex-row cursor-pointer">
+                <ul className="h-auto flex flex-row justify-end cursor-pointer">
+                    {/* <li>
+                        <NavLink to="/" className={({ isActive }) => isActive ? activeNav:inactiveNav}>
+                            Présentation
+                        </NavLink>
+                    </li> */}
                     <li>
-                        <a href="#presentation" className="hover:blue duration-300">
-                            About Me
-                        </a>
+                        <NavLink to="/projects" className={({ isActive }) => isActive ? activeNav:inactiveNav}>
+                            Projets
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#skills">
-                            Skills
-                        </a>
+                        <NavLink to="/skills" className={({ isActive }) => isActive ? activeNav:inactiveNav}>
+                            Compétences
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#experiences">
-                            Experiences & Education
-                        </a>
+                        <NavLink to="/education" className={({ isActive }) => isActive ? activeNav:inactiveNav}>
+                            Formations & Expériences
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#projects">
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
+                        <NavLink to="/contact" className={({ isActive }) => isActive ? activeNav:inactiveNav}>
                             Contact
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
