@@ -1,3 +1,6 @@
+// Styles
+import '../../index.css';
+
 interface projectsDataProps {
     id: number,
     name: string,
@@ -13,7 +16,7 @@ export default function Card(props: projectsDataProps) {
     return (
         
         <div key={props.id} className="py-7 flex flex-col">
-			<h3 className="card-title text-2xl p-1 mb-3 font-medium bg-blue">{props.name}</h3>
+			<h3 className="card-title text-2xl p-1 mb-3 font-medium bg-blue inline-block card-title">{props.name}</h3>
 			<p className="text-xl mb-5 font-normal">{props.description}</p>
             <p className="mb-7">
                 <a href={props.link} target={props.target} className="hover:cursor-pointer hover:text-blue underline text-lg font-normal text-[#9d9c9c]">Lien du projet Github</a>

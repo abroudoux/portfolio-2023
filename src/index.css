@@ -5,6 +5,7 @@
 
 *, ::after, ::before {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,4 +23,8 @@ h3, p {
 
 .hovered {
     transform: translateX(2px);
+}
+
+.card-title {
+    display: inline-block;
 }

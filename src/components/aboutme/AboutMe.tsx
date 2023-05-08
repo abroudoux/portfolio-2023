@@ -15,13 +15,13 @@ export default function AboutMe() {
             <p className="text-xl py-5 font-medium leading-8">
                 Développeur web depuis un an, je cherche à me perfectionner au travers de nouveaux projets et défis en tous genres
                 <br/>
-                Fiable et introspectif, je sais fournir une image honnête de moi-même et montrer les efforts nécessaires pour l'améliorer
+                Fiable et introspectif, je sais fournir une image honnête de moi-même et montrer les efforts nécessaires pour m'améliorer
                 <br/>
                 J'accorde un soin tout particulier à fournir un travail <span className="text-blue">soigné</span> et <span className="text-blue">accessible</span> ainsi qu'à maintenir un environnement de travail propre et correctement agencé
                 <br/>
             </p>
 
-            <p className="text-lg py-7 font-medium leading-7">
+            <p className="text-lg py-3 font-medium leading-7">
                 📍 Angers & Le Mans
                 <br/>
                 🎉 19 ans
