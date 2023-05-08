@@ -4,7 +4,7 @@ const projectsData = [
         name: "Easy-Chat",
         description: "Projet de partiel : imaginer un produit high-tech et réaliser différents supports. Création d'un site vitrine en 3 jours avec contraintes.",
         link: "https://github.com/abroudoux/easy-chat",
-        technos: "SCSS, JavaScript, PHP, MySQL",
+        technos: "PHP, JavaScript, MySQL",
         target: "_blank",
     },
     {
