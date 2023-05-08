@@ -14,7 +14,7 @@ export default function Projects() {
 
     return (
         
-        <section id="projects" className="w-full h-auto pt-16 pr-128 pl-10 pb-10">
+        <section className="w-full h-auto pt-16 pr-128 pl-10 pb-10">
 
             <h2 className="text-4xl pb-5 font-semibold">
                 Quelqu'uns de mes projets...

@@ -9,9 +9,9 @@ export default function Contact() {
 
     return (
 
-        <section id="contact" className="w-full h-auto p-12 pt-16">
+        <section className="w-full h-auto p-12 pt-16">
 
-            <h2 className="text-4xl pb-5 font-semibold">
+            <h2 className="text-4xl pb-7 font-semibold">
                 Vous pouvez me contacter via...
             </h2>
 

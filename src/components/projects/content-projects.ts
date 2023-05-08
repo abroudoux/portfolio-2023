@@ -10,7 +10,7 @@ const projectsData = [
     {
         id: 2,
         name: "Vue Test",
-        description: "1 semaine pour développer un site web en utilisant au choix Vue ou React, TypeScript et en configurant un routeur",
+        description: "Défi : 1 semaine pour développer un site web vitrine en utilisant au choix Vue ou React, TypeScript et un routeur",
         link: "https://github.com/abroudoux/vue-test",
         technos: "VueJs, SCSS, TypeScript",
         target: "_blank",
@@ -18,7 +18,7 @@ const projectsData = [
     {
         id: 3,
         name: "JS Projects",
-        description: "Site réunissant des sides-projects JavaScript",
+        description: "Side-projects JavaScript (Calculatrice, Tic-Tac-Toe, Récupération des coordonnées de l'ISS grâce à une API)",
         link: "https://github.com/abroudoux/js-projects",
         technos: "HTML, SCSS, JavaScript",
         target: "_blank",

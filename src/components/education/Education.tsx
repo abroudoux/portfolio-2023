@@ -2,7 +2,7 @@ export default function Education() {
 
     return (
         
-        <section id="education">
+        <section>
             
             <h1>
                 Mes différentes expériences

@@ -7,7 +7,7 @@ const skillsData = [
     {
         id: 2,
         name: "Développement Front",
-        description: "Programmation en JavaScript/TypeScript. Développement web optimisé à l'aide de frameworks JS (Vue & React)"
+        description: "Programmation en JavaScript/TypeScript. Développement web optimisé et utilisation de frameworks et outils JS (Vue, React, Vite)"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const skillsData = [
     {
         id: 5,
         name: "Webdesign & Création grahpique",
-        description: "Notions et compétences basiques en ergonomie et création web avec des outils comme Figma, Photoshop ou Illustrator",
+        description: "Notions et compétences en ergonomie et création web avec des outils comme Figma, Photoshop ou Illustrator",
     },
 ];
 

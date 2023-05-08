@@ -1,17 +1,28 @@
 // React
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 
 
 export default function Infos() {
 
-    const [hovered, setHovered] = useState(false);
+    const [ hovered, setHovered ] = useState(false);
+    const [ isInfosVisible, setIsInfosVisible ] = useState(true);
+    const [ showCross, setShowCross ] = useState(false);
+    
+    useEffect(() => {
+
+        const timeoutId = setTimeout(() => {
+            setShowCross(true);
+        }, 5000);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
 
     return (
 
-        <section className="w-screen bg-blue flex justify-center" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+        <section className={`w-screen bg-blue flex justify-center ${isInfosVisible ? '' : 'hidden'}`}>
 
-            <NavLink to="/contact" className="flex items-center hover:cursor-pointer">
+            <NavLink to="/contact" className="flex items-center hover:cursor-pointer" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
 
                 <p className="pt-2 pb-2 text-base text-center sm:text-left">
                     Je suis actuellement à la recherche d'une alternance à partir de septembre 2023, contactez-moi plus plus d'informations!
@@ -21,6 +32,14 @@ export default function Infos() {
                 </svg>
                     
             </NavLink>
+
+            {showCross && (
+                <p className="absolute right-10 mt-3 transition ease-in-out duration-300 hover:cursor-pointer hover:scale-125" onClick={() => setIsInfosVisible(false)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="h-4 w-4" strokeWidth={1.5} stroke="currentColor">
+                        <path fill="currentColor" d="M224 222.1L407 39.03C416.4 29.66 431.6 29.66 440.1 39.03C450.3 48.4 450.3 63.6 440.1 72.97L257.9 256L440.1 439C450.3 448.4 450.3 463.6 440.1 472.1C431.6 482.3 416.4 482.3 407 472.1L224 289.9L40.97 472.1C31.6 482.3 16.4 482.3 7.029 472.1C-2.343 463.6-2.343 448.4 7.029 439L190.1 256L7.029 72.97C-2.343 63.6-2.343 48.4 7.029 39.03C16.4 29.66 31.6 29.66 40.97 39.03L224 222.1z"/>
+                    </svg>
+                </p>
+            )}
             
         </section>
 
