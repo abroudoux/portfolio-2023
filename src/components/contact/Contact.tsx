@@ -32,13 +32,13 @@ export default function Contact() {
                     Merci beaucoup d'être parvenu jusque ici !
                 </h2>
 
-                <p className="text-xl py-5 font-normal leading-8">
+                <p className="text-xl py-5 font-normal leading-10">
                     Comme vous avez du le comprendre, je suis à la recherche d'une alternance en développement, à partir de Septembre 2023
                     <br/>
                     Si vous êtes intéressés par mon profil ou que quelqu'un de votre entourage est à la recherche d'un profil comme le mien, n'hésitez pas à leur partager mon profil, cela m'aiderait beaucoup
                     <br/>
                     <br/>
-                    <span className="bg-blue p-1 font-medium"> MERCI !</span>
+                    <span className="bg-blue p-1 font-medium"> MERCI !</span><span className="ml-4 text-lg font-light">Et peut-être à bientôt ?</span>
                 </p>
 
             </div>

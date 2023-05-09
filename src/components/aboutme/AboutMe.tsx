@@ -20,7 +20,7 @@ export default function AboutMe() {
                 Développeur web depuis un an, je cherche à me perfectionner au travers de nouveaux projets et défis en tous genres
                 <br/>
                 <br/>
-                Fiable et introspectif, je sais fournir une image honnête de moi-même et montrer les efforts nécessaires pour m'améliorer
+                Fiable et introspectif, je sais fournir une image honnête de moi-même et faire les efforts nécessaires pour m'améliorer
                 <br/>
                 <br/>
                 J'accorde un soin tout particulier à fournir un travail <span className="text-blue">soigné</span> et <span className="text-blue">accessible</span> ainsi qu'à maintenir un environnement de travail organisé
@@ -36,22 +36,22 @@ export default function AboutMe() {
             <div className="mt-14 lg:mt-20">
                 <ul className="flex row">
                     <li className="pr-1">
-                        <a href="" className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
+                        <a href="mailto:arthur.broudoux@gmail.com" className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
                             Mail
                         </a>
                     </li>
                     <li className="px-1">
-                        <a href={cv} target="_blank" className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
+                        <a href={cv} target="_blank" rel="noreferrer" className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
                             Curriculum Vitae
                         </a>
                     </li>
                     <li className="px-1">
-                        <a href="https://github.com/abroudoux" target="_blank" className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
+                        <a href="https://github.com/abroudoux" target="_blank" rel="noreferrer" className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
                             Github
                         </a>
                     </li>
                     <li className="pl-1">
-                        <a href="https://www.linkedin.com/in/arthur-broudoux-b318a8251/" target="_blank" className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
+                        <a href="https://www.linkedin.com/in/arthur-broudoux-b318a8251/" target="_blank" rel="noreferrer"className="underline hover:bg-white hover:text-black transition-all 300ms ease-in-out p-1 font-medium text-lg ">
                             Linkedin
                         </a>
                     </li>
