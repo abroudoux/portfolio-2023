@@ -7,7 +7,7 @@ const skillsData = [
     {
         id: 2,
         name: "Développement Front",
-        description: "Programmation en JavaScript/TypeScript. Développement web optimisé et utilisation de frameworks et outils JS (Vue, React, Vite)"
+        description: "Programmation en JavaScript/TypeScript. Développement web optimisé avec l'utilisation de frameworks JS comme Vue ou React"
     },
     {
         id: 3,

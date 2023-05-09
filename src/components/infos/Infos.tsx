@@ -20,7 +20,7 @@ export default function Infos() {
 
         const timeoutId = setTimeout(() => {
             setShowCross(true);
-        }, 5000);
+        }, 3000);
 
         return () => clearTimeout(timeoutId);
     }, []);
