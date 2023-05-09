@@ -19,12 +19,6 @@ h3, p {
     vertical-align: top;
   }
 
-// Classes
-
 .hovered {
     transform: translateX(2px);
-}
-
-.card-title {
-    display: inline-block;
 }

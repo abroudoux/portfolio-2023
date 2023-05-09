@@ -62,7 +62,7 @@ export default function Header() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/education" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue' + ' hover:text-white' : 'bg-transparent' + ' hover:text-blue'}`} onClick={closeMenu}>
+                            <NavLink to="/formations" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue' + ' hover:text-white' : 'bg-transparent' + ' hover:text-blue'}`} onClick={closeMenu}>
                                 Formations & Expériences
                             </NavLink>
                         </li>

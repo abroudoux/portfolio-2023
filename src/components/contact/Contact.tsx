@@ -9,7 +9,7 @@ export default function Contact() {
 
     return (
 
-        <section className="w-full h-auto p-12 pt-16">
+        <section className="w-full h-auto px-5 md:p-12 pt-5 md:pt-16">
 
             <h2 className="text-4xl pb-7 font-semibold">
                 Vous pouvez me contacter via...

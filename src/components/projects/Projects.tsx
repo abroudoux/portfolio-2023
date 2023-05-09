@@ -14,7 +14,7 @@ export default function Projects() {
 
     return (
         
-        <section className="w-full h-auto pt-16 pr-128 pl-10 pb-10">
+        <section className="w-full h-auto pt-5 lg:pt-16 px-5 lg:pr-128 lg:pl-10 pb-10">
 
             <h2 className="text-4xl pb-5 font-semibold">
                 Quelqu'uns de mes projets...
@@ -31,7 +31,7 @@ export default function Projects() {
                 />
             ))}
 
-            <div className="flex items-center mt-10" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+            <div className="flex items-center justify-center lg:justify-start mt-12" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
 
                 <p className="text-xl">
                     Découvrez-en plus sur <a href="https://github.com/abroudoux" target="_blank" className="underline">mon Github</a>
