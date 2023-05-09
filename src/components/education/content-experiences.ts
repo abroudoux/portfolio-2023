@@ -3,7 +3,7 @@ const experiencesData = [
         id: 1,
         name: "Stage de découverte",
         entreprise: "Krakn Behavioural",
-        missions: "Aider à réalisations de supports graphiques et web pour améliorer la présence et l'image de marquer. Générer de nouveaux leads, relation client.",
+        missions: "Aider à réalisations de supports graphiques et web pour améliorer la présence et l'image de marque. Générer de nouveaux leads, relation client.",
         quand: "Actuellement",
         competences: "Travail en autonomie, apprentissage, communication",
     },

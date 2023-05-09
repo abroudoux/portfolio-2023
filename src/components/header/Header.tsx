@@ -1,6 +1,6 @@
 // React
 import { NavLink } from "react-router-dom";
-import { MouseEvent, useState, HTMLAttributes, useEffect } from "react";
+import { MouseEvent, useState, useEffect } from "react";
 
 
 export default function Header() {
