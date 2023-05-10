@@ -15,7 +15,7 @@ export default function Infos() {
             setIsInfosVisible(false);
         }
     };
-    
+
     useEffect(() => {
 
         const timeoutId = setTimeout(() => {
@@ -37,7 +37,7 @@ export default function Infos() {
                 <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 hidden lg:block ml-1 transition ease-in-out duration-300 ${hovered ? 'translate-x-1' : ''}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                 </svg>
-                    
+
             </NavLink>
 
             {showCross && (
@@ -47,7 +47,7 @@ export default function Infos() {
                     </svg>
                 </p>
             )}
-            
+
         </section>
 
     )

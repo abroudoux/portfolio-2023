@@ -39,9 +39,9 @@ export default function Header() {
         function handleResize() {
             setIsMenuOpen(window.innerWidth >= 768);
         }
-    
+
         window.addEventListener("resize", handleResize);
-    
+
         return () => {
             window.removeEventListener("resize", handleResize);
         };
