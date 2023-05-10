@@ -11,7 +11,7 @@ interface projectsDataProps {
 export default function Card(props: projectsDataProps) {
 
     return (
-        
+
         <div key={props.id} className="py-7 flex flex-col">
 			<h3 className="card-title text-2xl p-1 mb-3 font-medium bg-blue inline">{props.name}</h3>
 			<p className="text-xl mb-5 font-normal">{props.description}</p>
