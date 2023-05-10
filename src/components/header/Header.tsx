@@ -5,6 +5,7 @@ import { MouseEvent, useState, useEffect } from "react";
 
 export default function Header() {
 
+    // Menu
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [title, setTitle] = useState<string>(() => {
         const storedTitle = localStorage.getItem("title");
@@ -13,12 +14,13 @@ export default function Header() {
 
     function Menu(e: MouseEvent<HTMLSpanElement>) {
         setIsMenuOpen(!isMenuOpen);
-    }
+    };
 
     function closeMenu() {
         setIsMenuOpen(false);
-    }
+    };
 
+    // Title
     const titleChange = (e: string) => {
         const newTitle = `abroudoux${e}`;
         setTitle(newTitle);
@@ -26,13 +28,14 @@ export default function Header() {
     };
 
     useEffect(() => {
+
+        // Title
         const storedTitle = localStorage.getItem("title");
         if (storedTitle) {
             setTitle(storedTitle);
         }
-    }, []);
 
-    useEffect(() => {
+        // Handle Resize
         function handleResize() {
             setIsMenuOpen(window.innerWidth >= 768);
         }
@@ -42,13 +45,14 @@ export default function Header() {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
 
+    }, []);
 
     return (
 
         <header className="bg-black w-full h-auto flex md:items-center flex-col md:flex-row py-5 px-5 md:px-10 md:justify-between sticky top-0">
 
+            {/* Title + Menu Icon */}
             <div className="flex flex-row justify-between">
                 <NavLink to="/" className="md:w-6/12 text-3xl font-semibold hover:text-blue" onClick={event => { closeMenu(); titleChange("") }}>
                     <h2 id="title_menu">
@@ -67,34 +71,27 @@ export default function Header() {
                 )}
             </div>
 
+            {/* Nav Bar */}
             {(isMenuOpen || window.innerWidth >= 768) && (
             <nav id="nav" className="transition-all ease-in duration-500"> 
                 <ul className="flex flex-col md:flex-row justify-around text-2xl md:text-xl mt-4 md:mt-0 ">
                     <li>
-                        <NavLink to="/projects" 
-                        className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } 
-                        onClick={event => { closeMenu(); titleChange("/projects") }}>
+                        <NavLink to="/projects" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/projects") }}>
                             Projets
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/skills" 
-                        className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } 
-                        onClick={event => { closeMenu(); titleChange("/compétences") }}>
+                        <NavLink to="/skills" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/compétences") }}>
                             Compétences
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/formations" 
-                        className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } 
-                        onClick={event => { closeMenu(); titleChange("/formations") }}>
+                        <NavLink to="/formations" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/formations") }}>
                             Formations & Expériences
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" 
-                        className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } 
-                        onClick={event => { closeMenu(); titleChange("/contact") }}>
+                        <NavLink to="/contact" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/contact") }}>
                             Contact
                         </NavLink>
                     </li>
