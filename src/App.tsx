@@ -1,5 +1,5 @@
 // React
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
 import Infos from './components/infos/Infos';
@@ -11,6 +11,7 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 
 
+
 export default function App() {
 
 	return (
@@ -20,13 +21,13 @@ export default function App() {
 			<Header />
 
 			<Routes>
-                <Route path="/" element={<AboutMe />}></Route>
+				<Route path="/" element={<AboutMe />}></Route>
 				<Route path="/projects" element={<Projects />}></Route>
 				<Route path="/skills" element={<Skills />}></Route>
 				<Route path="/formations" element={<Education />}></Route>
 				<Route path="/contact" element={<Contact />}></Route>
             </Routes>
-
 		</div>
+
 	)
 }

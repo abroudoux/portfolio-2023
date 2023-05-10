@@ -1,6 +1,5 @@
 // React
 import { useEffect, useState } from 'react';
-import { NavLink } from "react-router-dom";
 
 
 export default function Infos() {
@@ -8,12 +7,9 @@ export default function Infos() {
     const [ hovered, setHovered ] = useState(false);
     const [ isInfosVisible, setIsInfosVisible ] = useState(true);
     const [ showCross, setShowCross ] = useState(false);
-    const mobileBreakPoint = 976;
 
     const handleClick = () => {
-        if (window.innerWidth <= mobileBreakPoint) {
-            setIsInfosVisible(false);
-        }
+        setIsInfosVisible(false);
     };
 
     useEffect(() => {
@@ -29,7 +25,7 @@ export default function Infos() {
 
         <section className={`w-screen flex justify-center bg-blue ${isInfosVisible ? '' : 'hidden'}`}>
 
-            <NavLink to="/contact" className="flex items-center px-5 hover:cursor-pointer" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onClick={handleClick}>
+            <div className="flex items-center px-5 hover:cursor-pointer" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onClick={handleClick}>
 
                 <p className="text-center lg:text-left py-2 md:text-base">
                     Je suis actuellement à la recherche d'une alternance à partir de septembre 2023, contactez-moi plus plus d'informations!
@@ -38,7 +34,7 @@ export default function Infos() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                 </svg>
 
-            </NavLink>
+            </div>
 
             {showCross && (
                 <p className="absolute right-10 mt-3 transition ease-in-out duration-300 hover:cursor-pointer hover:scale-125" onClick={() => setIsInfosVisible(false)}>

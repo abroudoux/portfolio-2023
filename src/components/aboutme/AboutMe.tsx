@@ -27,10 +27,10 @@ export default function AboutMe() {
                 <br/>
             </p>
 
-            <p className="text-lg pt-6 font-medium leading-7">
+            <p className="text-lg pt-6 font-medium leading-8">
                 Basé à Angers & Le Mans 📍
                 <br/>
-                Très bon niveau en Français, niveau professionnel en Anglais
+                Très bon niveau en Français, Niveau professionnel en Anglais
             </p>
 
             <div className="mt-14 lg:mt-20">
