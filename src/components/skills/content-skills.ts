@@ -22,7 +22,7 @@ const skillsData = [
     {
         id: 5,
         name: "Webdesign & Création grahpique",
-        description: "Notions et compétences en ergonomie et création web avec des outils comme Figma, Photoshop ou Illustrator",
+        description: "Notions et compétences en ergonomie et création web avec des outils comme Figma ou la suite Adobe (Photoshop, Illustrator)",
     },
 ];
 
