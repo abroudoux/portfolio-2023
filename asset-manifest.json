@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e825cb59.css",
-    "main.js": "/portfolio/static/js/main.299fb14a.js",
+    "main.js": "/portfolio/static/js/main.32ee0825.js",
     "static/media/cv-arthur-2023.jpeg": "/portfolio/static/media/cv-arthur-2023.23e78854a806fe2517ae.jpeg",
     "index.html": "/portfolio/index.html",
     "main.e825cb59.css.map": "/portfolio/static/css/main.e825cb59.css.map",
-    "main.299fb14a.js.map": "/portfolio/static/js/main.299fb14a.js.map"
+    "main.32ee0825.js.map": "/portfolio/static/js/main.32ee0825.js.map"
   },
   "entrypoints": [
     "static/css/main.e825cb59.css",
-    "static/js/main.299fb14a.js"
+    "static/js/main.32ee0825.js"
   ]
 }
