@@ -76,7 +76,7 @@ export default function Header() {
             <nav id="nav" className="transition-all ease-in duration-500"> 
                 <ul className="flex flex-col md:flex-row justify-around text-2xl md:text-xl mt-4 md:mt-0 ">
                     <li>
-                        <NavLink to="/projects" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/projects") }}>
+                        <NavLink to="/projects" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/projets") }}>
                             Projets
                         </NavLink>
                     </li>
