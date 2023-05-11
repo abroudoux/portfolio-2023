@@ -14,7 +14,12 @@ body {
     background-color: #101010;
     color: #FCFCFC;
     font-family: 'Lato', sans-serif;
-    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .hovered {
