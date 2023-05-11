@@ -10,9 +10,9 @@ import Formations from './Formations'
 export default function Education() {
 
     return (
-        
+
         <section className="w-full h-auto pt-5 md:pt-16 px-5 md:pr-128 md:pl-10 pb-10">
-            
+
             <div className="pb-5">
                 <h1 className="text-4xl font-semibold">
                     Mes expériences

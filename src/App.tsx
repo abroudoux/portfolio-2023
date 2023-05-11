@@ -1,9 +1,11 @@
 // React
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Components
 import Infos from './components/infos/Infos';
 import Header from './components/header/Header';
+
+// Pages
 import AboutMe from './components/aboutme/AboutMe';
 import Skills from './components/skills/Skills';
 import Education from "./components/education/Education";

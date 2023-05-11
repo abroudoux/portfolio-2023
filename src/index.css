@@ -6,6 +6,8 @@
 *, ::after, ::before {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -13,11 +15,6 @@ body {
     color: #FCFCFC;
     font-family: 'Lato', sans-serif;
 }
-
-h3, p {
-    display: inline-block;
-    vertical-align: top;
-  }
 
 .hovered {
     transform: translateX(2px);
