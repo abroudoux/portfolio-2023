@@ -26,3 +26,6 @@ yarn-error.log*
 
 # configuration
 manifest.json
+
+# other
+TODO.md

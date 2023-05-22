@@ -27,6 +27,23 @@ export default function Header() {
         localStorage.setItem("title", newTitle);
     };
 
+    // Cookies
+    const handleUnload = () => {
+        localStorage.removeItem("title");
+        document.cookie.split(";").forEach(function (c) {
+            document.cookie = c
+            .replace(/^ +/, "")
+            .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        });
+    };
+
+    window.addEventListener("beforeunload", handleUnload);
+
+    // Scroll To Top
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     useEffect(() => {
 
         // Title
@@ -42,8 +59,21 @@ export default function Header() {
 
         window.addEventListener("resize", handleResize);
 
+        // Cookies
+        const handleUnload = () => {
+            localStorage.removeItem("title");
+            document.cookie.split(";").forEach(function (c) {
+                document.cookie = c
+                .replace(/^ +/, "")
+                .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+            });
+        };
+
+        window.addEventListener("beforeunload", handleUnload);
+
         return () => {
             window.removeEventListener("resize", handleResize);
+            window.removeEventListener("beforeunload", handleUnload);
         };
 
     }, []);
@@ -54,7 +84,7 @@ export default function Header() {
 
             {/* Title + Menu Icon */}
             <div className="flex flex-row justify-between">
-                <NavLink to="/" className="md:w-6/12 text-3xl font-semibold hover:text-blue" onClick={event => { closeMenu(); titleChange("") }}>
+                <NavLink to="/" className="md:w-6/12 text-3xl font-semibold hover:text-blue" onClick={event => { closeMenu(); titleChange(""); scrollToTop() }}>
                     <h2 id="title_menu">
                         <h1>
                             {title}
@@ -76,22 +106,22 @@ export default function Header() {
             <nav id="nav" className="transition-all ease-in duration-500"> 
                 <ul className="flex flex-col md:flex-row justify-around text-2xl md:text-xl mt-4 md:mt-0 ">
                     <li>
-                        <NavLink to="/projects" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/projets") }}>
+                        <NavLink to="/projects" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/projets"); scrollToTop() }}>
                             Projets
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/skills" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/compétences") }}>
+                        <NavLink to="/skills" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/compétences"); scrollToTop() }}>
                             Compétences
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/formations" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/formations") }}>
+                        <NavLink to="/formations" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/formations"); scrollToTop() }}>
                             Formations & Expériences
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/contact") }}>
+                        <NavLink to="/contact" className={ ({isActive}) => `md:p-2 text-md font-medium ${isActive ? 'md:bg-blue md:text-white text-blue hover:text-white' : 'bg-transaparent hover:text-blue'}` } onClick={event => { closeMenu(); titleChange("/contact"); scrollToTop() }}>
                             Contact
                         </NavLink>
                     </li>
@@ -100,5 +130,6 @@ export default function Header() {
             )}
 
         </header>
-    )
+
+    ) 
 }
