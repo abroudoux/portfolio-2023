@@ -2,7 +2,7 @@ const skillsData = [
     {
         id: 1,
         name: "Intégration Web",
-        description: "Concevoir des architectures web adaptées avec du HTML accessible ainsi que de CSS maintenable et responsive, notamment à l'aide de frameworks comme SCSS ou Tailwind"
+        description: "Concevoir des architectures web adaptées avec du HTML accessible ainsi que du CSS maintenable et responsive, notamment à l'aide de SCSS ou Tailwind"
     },
     {
         id: 2,
