@@ -1,5 +1,5 @@
 // CV
-import cv from '../../img/cv-arthur-2023.jpeg'
+import cv from '../../img/cv-arthur-2023.jpg';
 
 
 export default function AboutMe() {
