@@ -1,7 +1,7 @@
 interface projectsDataProps {
     id: number,
     name: string,
-    description: string,
+    description: string | undefined,
     link: string,
     technos: string,
     target: string,
