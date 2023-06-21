@@ -1,5 +1,12 @@
 const projectsData = [
     {
+        id: 0,
+        name: "Questionnaire de Seligman",
+        link: "https://github.com/abroudoux/seligman-questionnaire",
+        technos: "React, TypeScript, SCSS",
+        target: "_blank",
+    },
+    {
         id: 1,
         name: "Easy-Chat",
         description: "Projet de partiel : imaginer un produit et réaliser différents supports pour imaginer sa sortie. Création d'un site vitrine en 3 jours avec contraintes",
