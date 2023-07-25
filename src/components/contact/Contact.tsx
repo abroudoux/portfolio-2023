@@ -13,7 +13,7 @@ export default function Contact() {
 
             <div>
                 <h2 className="text-4xl pb-7 font-semibold">
-                    Vous pouvez me contacter via...
+                    Vous pouvea me retrouver sur ...
                 </h2>
 
                 {contents.map(contents => (
@@ -27,7 +27,7 @@ export default function Contact() {
                 ))}
             </div>
 
-            <div className="mt-12">
+            {/* <div className="mt-12">
                 <h2 className="text-3xl py-7 font-medium">
                     Merci beaucoup d'être parvenu jusque ici !
                 </h2>
@@ -40,9 +40,9 @@ export default function Contact() {
                     <br/>
                     <span className="bg-blue p-1 font-medium"> MERCI !</span><span className="ml-4 text-lg font-light">Et peut-être à bientôt ?</span>
                 </p>
-            </div>
+            </div> */}
 
         </section>
-        
+
     )
 }

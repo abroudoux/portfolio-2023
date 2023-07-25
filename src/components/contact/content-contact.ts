@@ -13,6 +13,13 @@ const contactData = [
         link: "https://www.linkedin.com/in/arthur-broudoux-b318a8251/",
         target: "_blank",
     },
+    {
+        id: 3,
+        name: "Github",
+        value: "abroudoux",
+        link: "https://github.com/abroudoux",
+        target: "_blank",
+    },
 ];
 
 export default contactData

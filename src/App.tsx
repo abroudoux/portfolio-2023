@@ -13,13 +13,12 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 
 
-
 export default function App() {
 
 	return (
 
 		<div>
-			<Infos />
+			{/* <Infos /> */}
 			<Header />
 
 			<Routes>
