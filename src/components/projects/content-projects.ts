@@ -2,6 +2,7 @@ const projectsData = [
     {
         id: 0,
         name: "Questionnaire de Seligman",
+        description: "Découvrez vos 5 forces principales de caractère avec ce test de personnalité",
         link: "https://github.com/abroudoux/seligman-questionnaire",
         technos: "React, TypeScript, SCSS",
         target: "_blank",
