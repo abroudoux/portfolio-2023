@@ -18,7 +18,7 @@ export default function Card(props: projectsDataProps) {
             <p className="mb-7">
                 <a href={props.link} target={props.target} className="hover:cursor-pointer hover:text-blue underline text-lg font-normal text-[#9d9c9c]">Lien du projet Github</a>
 			</p>
-            <p className="text-lg font-light flex md:justify-end italic">Technos utilisées : {props.technos}</p>
+            <p className="text-lg font-light flex md:justify-end">{props.technos}</p>
 		</article>
     )
 }

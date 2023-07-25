@@ -15,7 +15,7 @@ export default function Education() {
 
             <div className="pb-5">
                 <h1 className="text-4xl font-semibold">
-                    Mes expériences
+                    Expériences
                 </h1>
 
                 {contentsExp.map(contentsExp => (
@@ -32,7 +32,7 @@ export default function Education() {
 
             <div className="py-12">
                 <h2 className="text-4xl font-semibold">
-                    Mes formations
+                    Éducation
                 </h2>
 
                 {contentsForm.map(contentsForm => (

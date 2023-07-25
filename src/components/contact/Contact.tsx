@@ -13,7 +13,7 @@ export default function Contact() {
 
             <div>
                 <h2 className="text-4xl pb-7 font-semibold">
-                    Vous pouvea me retrouver sur ...
+                    Vous pouvez me retrouver sur ...
                 </h2>
 
                 {contents.map(contents => (

@@ -28,7 +28,7 @@ const experiencesData = [
         name: "Rédacteur bénévole",
         entreprise: "Superforma",
         missions: "Rédaction de chroniques sur les nouvelles sorties musicales Sarthoises",
-        quand: "2021 - Actuellement",
+        quand: "Depuis 2021",
         competences: "Rédaction, curiosité",
     },
     {

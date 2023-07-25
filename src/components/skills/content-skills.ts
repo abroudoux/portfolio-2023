@@ -7,17 +7,17 @@ const skillsData = [
     {
         id: 2,
         name: "Développement Front",
-        description: "Programmation en JavaScript/TypeScript. Développement web optimisé avec l'utilisation de frameworks JS comme Vue ou React"
+        description: "Programmation Web en JavaScript/TypeScript. Développement web optimisé avec l'utilisation de frameworks JS comme React ou Vue"
     },
     {
         id: 3,
         name: "Développement Back & Base de données",
-        description: "Création de programmes en PHP et manipulation de bases de données avec MySQL"
+        description: "Création de programmes en PHP avec Symfony et manipulation de bases de données SQL/NoSQL"
     },
     {
         id: 4,
         name: "Environnement de travail",
-        description: "Maintenance d'un environnement de travail collaboratif organisé avec des outils comme Git & Github",
+        description: "Maintenance d'un environnement de travail collaboratif organisé avec des outils comme Git et Github",
     },
     {
         id: 5,
@@ -26,4 +26,4 @@ const skillsData = [
     },
 ];
 
-export default skillsData
+export default skillsData;
